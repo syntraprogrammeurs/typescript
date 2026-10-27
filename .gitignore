@@ -1,10 +1,14 @@
 # ==========================================
 # TYPESCRIPT LESSEN - VOORTGANG
 # ==========================================
+# Alles tot en met paragraaf 4.3 staat online.
 
 # Alle hoofdstukken standaard uitsluiten
 /[0-9][0-9]-*/
 /Oefenreeks*/
+
+# Over dit deel - altijd zichtbaar
+!/00-Over dit deel/
 
 # Hoofdstuk 01 - VOLTOOID
 !/01-Het project en de werkplek/
@@ -12,18 +16,30 @@
 # Hoofdstuk 02 - VOLTOOID
 !/02-Van JavaScript naar TypeScript/
 
-# Hoofdstuk 03 - BEZIG
+# Hoofdstuk 03 - VOLTOOID
 !/03-Functies typeren/
 
-# In hoofdstuk 03 alle oefeningen uitsluiten
-/03-Functies typeren/*
+# Hoofdstuk 04 - BEZIG: tot en met 4.3
+!/04-Objecten, interfaces en structural typing/
+/04-Objecten, interfaces en structural typing/*
+!/04-Objecten, interfaces en structural typing/README.md
+!/04-Objecten, interfaces en structural typing/img/
+!/04-Objecten, interfaces en structural typing/4.1-Een objecttype/
+!/04-Objecten, interfaces en structural typing/4.2-interface en type/
+!/04-Objecten, interfaces en structural typing/4.3-Optionele en readonly-velden/
 
-# Afgewerkte oefeningen toelaten
-!/03-Functies typeren/3.02-Optionele parameters en standaardwaarden/
-!/03-Functies typeren/3.03-Restparameters/
-!/03-Functies typeren/3.05-Functies die functies maken/
-!/03-Functies typeren/oefening-3.1-Kortingsregels combineren/
-!/03-Functies typeren/oefening-3.2-Bedragen tellen met een voorwaarde/
+# Volgende paragrafen van hoofdstuk 04 (voeg toe zodra ze behandeld zijn):
+#   !/04-Objecten, interfaces en structural typing/4.4-De vorm van een product/
+#   !/04-Objecten, interfaces en structural typing/4.5-Uitbreiden met extends en &/
+#   !/04-Objecten, interfaces en structural typing/4.6-Een gemeenschappelijke basis en index signatures/
+#   !/04-Objecten, interfaces en structural typing/4.7-Structural typing/
+#   !/04-Objecten, interfaces en structural typing/4.8-De eerste catalogus/
+#   !/04-Objecten, interfaces en structural typing/4.9-Klassikale oefening 4.1 - Klanten en adressen/
+#   !/04-Objecten, interfaces en structural typing/4.10-Klassikale oefening 4.2 - Eén etiket voor alles met een naam en een prijs/
+#   !/04-Objecten, interfaces en structural typing/4.11-Veelgemaakte fouten/
+#   !/04-Objecten, interfaces en structural typing/4.12-Voor wie klaar is/
+#   !/04-Objecten, interfaces en structural typing/4.13-Wat je nu kunt/
+
 # ==========================================
 # ALGEMENE UITSLUITINGEN
 # ==========================================

@@ -19,12 +19,30 @@ npm -v
 
 Kloon de repository met `git clone <REPOSITORY-URL>` of kies op GitHub **Code → Download ZIP**.
 
+## Hoe de map is opgebouwd
+
+Per hoofdstuk staat er een map, en daarin een map per paragraaf, met dezelfde nummering als in de cursus
+(`4.4-De vorm van een product` hoort bij paragraaf 4.4). In elke paragraaf vind je:
+
+| Bestand of map | Wat erin staat |
+| --- | --- |
+| `README.md` | De tekst van de paragraaf, met de echte uitvoer van elk voorbeeld |
+| `voorbeelden/` | De proefcode uit de tekst, als bestanden. Bovenaan staat in commentaar waar het om gaat, hoe het bestand is opgebouwd en hoe je het uitvoert; onderaan staat wat het toont |
+| `startpunt/` | Het project zoals het is **voor** je aan de paragraaf begint (alleen waar code van het project verandert) |
+| `oplossing/` | Het project zoals het is **na** de paragraaf. De bestanden die in die paragraaf gemaakt of gewijzigd zijn, hebben bovenaan in commentaar de uitleg en de opbouw van de code; bij een klassikale oefening is dat de opgave, ook in het startpunt |
+
+De `README.md` van een hoofdstuk geeft de inleiding en de lijst van paragrafen. Bij de oefenreeksen staat de
+uitwerking van elke oefening in `UITWERKING.md`.
+
+De oplossing van de ene paragraaf is het startpunt van de volgende. Mis je een les, kopieer dan het startpunt
+van de paragraaf waar de klas staat naar je eigen werkmap.
+
 ## Een oefening starten
 
 1. Open de oefening in VS Code.
 2. Open een terminal in de **projectmap met `package.json`**. Bijvoorbeeld:
 
-   `lessen/03-Functies typeren/oefening-3.1-Kortingsregels combineren/oplossing/groenhuis/`
+   `lessen/03-Functies typeren/3.8-Klassikale oefening 3.1 - Kortingsregels combineren/oplossing/groenhuis/domein/`
 
 3. Installeer de dependencies:
 
