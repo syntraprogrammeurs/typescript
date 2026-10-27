@@ -1,0 +1,85 @@
+// Het Groenhuis — een product, met de regels die erbij horen
+
+import type { Afmetingen, Inhoudsstatus, ProductGegevens } from "./inhoud.ts";
+import { metBtw } from "./prijs.ts";
+
+export class Product {
+  readonly id: string;
+  slug: string;
+  naam: string;
+  beschrijving?: string;
+  btwPercentage: number;
+  categorieId: string;
+  tags: string[];
+  afmetingen?: Afmetingen;
+  #prijsInCent: number;
+  #voorraad: number;
+  #status: Inhoudsstatus;
+
+  constructor(gegevens: ProductGegevens) {
+    this.id = gegevens.id;
+    this.slug = gegevens.slug;
+    this.naam = gegevens.naam;
+    if (gegevens.beschrijving !== undefined) {
+      this.beschrijving = gegevens.beschrijving;
+    }
+    this.btwPercentage = gegevens.btwPercentage;
+    this.categorieId = gegevens.categorieId;
+    this.tags = [...gegevens.tags];
+    if (gegevens.afmetingen !== undefined) {
+      this.afmetingen = { ...gegevens.afmetingen };
+    }
+    this.#prijsInCent = gegevens.prijsInCent;
+    this.#voorraad = gegevens.voorraad;
+    this.#status = gegevens.status;
+  }
+
+  get prijsInCent(): number {
+    return this.#prijsInCent;
+  }
+
+  set prijsInCent(nieuwePrijs: number) {
+    if (!Number.isInteger(nieuwePrijs) || nieuwePrijs < 0) {
+      throw new Error(`Ongeldige prijs voor ${this.naam}: ${nieuwePrijs}`);
+    }
+    this.#prijsInCent = nieuwePrijs;
+  }
+
+  get prijsInclBtw(): number {
+    return metBtw(this.#prijsInCent, this.btwPercentage);
+  }
+
+  get voorraad(): number {
+    return this.#voorraad;
+  }
+
+  get status(): Inhoudsstatus {
+    return this.#status;
+  }
+
+  get isTeKoop(): boolean {
+    return this.#status === "gepubliceerd" && this.#voorraad > 0;
+  }
+
+  publiceer(): void {
+    if (this.#status === "gearchiveerd") {
+      throw new Error(`${this.naam} is gearchiveerd en kan niet meer gepubliceerd worden`);
+    }
+    if (this.#prijsInCent === 0) {
+      throw new Error(`${this.naam} heeft nog geen prijs`);
+    }
+    this.#status = "gepubliceerd";
+  }
+
+  archiveer(): void {
+    this.#status = "gearchiveerd";
+  }
+
+  pasVoorraadAan(verschil: number): void {
+    const nieuw = this.#voorraad + verschil;
+    if (nieuw < 0) {
+      throw new Error(`Niet genoeg ${this.naam}: ${this.#voorraad} in voorraad, ${-verschil} gevraagd`);
+    }
+    this.#voorraad = nieuw;
+  }
+}

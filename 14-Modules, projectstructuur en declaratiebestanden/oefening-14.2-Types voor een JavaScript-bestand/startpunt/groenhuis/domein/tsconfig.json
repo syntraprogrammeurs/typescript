@@ -1,0 +1,28 @@
+{
+  // De instellingen van TypeScript voor het pakket domein. Uitleg: hoofdstuk 2.
+  "compilerOptions": {
+    // Welk JavaScript er uitkomt, en hoe modules werken: zoals in Node 24
+    "module": "nodenext",
+    "target": "esnext",
+    "types": ["node"],
+
+    // Streng nakijken
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitOverride": true,
+
+    // Afspraken zodat Node de bestanden zelf kan uitvoeren
+    "erasableSyntaxOnly": true,
+    "verbatimModuleSyntax": true,
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+
+    // tsc kijkt alleen na, Node voert uit
+    "noEmit": true,
+    "skipLibCheck": true
+  },
+  "include": ["src", "oefeningen"]
+}

@@ -1,0 +1,34 @@
+# ==========================================
+# TYPESCRIPT LESSEN - VOORTGANG
+# ==========================================
+
+# Standaard alle lessen uitsluiten
+/lessen/*
+
+# Hoofdstuk 01 - VOLTOOID
+!/lessen/01-Het project en de werkplek/
+
+# Hoofdstuk 02 - VOLTOOID
+!/lessen/02-Van JavaScript naar TypeScript/
+
+# Hoofdstuk 03 - BEZIG
+!/lessen/03-Functies typeren/
+
+/lessen/03-Functies typeren/*
+
+# Afgewerkte oefeningen
+!/lessen/03-Functies typeren/3.02-Optionele parameters en standaardwaarden/
+!/lessen/03-Functies typeren/3.03-Restparameters/
+!/lessen/03-Functies typeren/3.05-Functies die functies maken/
+
+# ==========================================
+# ALGEMENE UITSLUITINGEN
+# ==========================================
+
+node_modules/
+dist/
+build/
+.env
+.env.*
+!.env.example
+.DS_Store

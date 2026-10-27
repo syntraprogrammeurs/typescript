@@ -1,0 +1,13 @@
+{
+  // De build: van src/ naar JavaScript en declaratiebestanden in dist/. Zoals bij Het Groenhuis, hoofdstuk 14.
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "rootDir": "src",
+    "outDir": "dist",
+    "declaration": true,
+    "rewriteRelativeImportExtensions": true
+  },
+  "include": ["src"],
+  "exclude": ["src/start.ts"]
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "r1",
+    "item": "f1",
+    "klant": "Sam Peeters",
+    "periode": {
+      "van": "2027-07-05",
+      "tot": "2027-07-09"
+    }
+  },
+  {
+    "id": "r2",
+    "item": "a2",
+    "klant": "Lien Maes",
+    "periode": {
+      "van": "2027-07-10",
+      "tot": "2027-07-24"
+    }
+  },
+  {
+    "id": "r3",
+    "item": "f3",
+    "klant": "Noor Claes",
+    "periode": {
+      "van": "2027-07-08",
+      "tot": "2027-07-11"
+    }
+  }
+]

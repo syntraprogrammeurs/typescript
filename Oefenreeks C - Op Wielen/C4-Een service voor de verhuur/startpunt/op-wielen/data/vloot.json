@@ -1,0 +1,80 @@
+[
+  {
+    "id": "f1",
+    "merk": "Gazelle",
+    "model": "Esprit",
+    "soort": "stadsfiets",
+    "framemaatInCm": 53,
+    "dagprijsInCent": 1200,
+    "uitrusting": {
+      "slot": true,
+      "mand": true,
+      "kinderzitje": false
+    },
+    "toestand": {
+      "status": "beschikbaar"
+    }
+  },
+  {
+    "id": "f3",
+    "merk": "Stromer",
+    "model": "ST3",
+    "soort": "e-bike",
+    "framemaatInCm": 55,
+    "dagprijsInCent": 3500,
+    "uitrusting": {
+      "slot": true,
+      "mand": false,
+      "kinderzitje": false
+    },
+    "toestand": {
+      "status": "verhuurd",
+      "klant": "Lien Maes",
+      "terugOp": "30 oktober"
+    }
+  },
+  {
+    "id": "f7",
+    "merk": "Cortina",
+    "model": "U4",
+    "soort": "plooifiets",
+    "dagprijsInCent": 1500,
+    "uitrusting": {
+      "slot": true,
+      "mand": false,
+      "kinderzitje": false
+    },
+    "toestand": {
+      "status": "beschikbaar"
+    }
+  },
+  {
+    "id": "f8",
+    "merk": "Gazelle",
+    "model": "Ultimate",
+    "soort": "e-bike",
+    "dagprijsInCent": "40",
+    "uitrusting": {
+      "slot": true
+    },
+    "toestand": {
+      "status": "in-herstel"
+    }
+  },
+  {
+    "id": "f9",
+    "merk": "Urban Arrow",
+    "model": "Family",
+    "soort": "bakfiets",
+    "dagprijsInCent": 5000,
+    "uitrusting": {
+      "slot": true,
+      "mand": false,
+      "kinderzitje": true
+    },
+    "toestand": {
+      "status": "afgeschreven",
+      "reden": "diefstal"
+    }
+  }
+]
