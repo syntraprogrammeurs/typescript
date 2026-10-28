@@ -1,7 +1,7 @@
 # ==========================================
 # TYPESCRIPT LESSEN - VOORTGANG
 # ==========================================
-# Alles tot en met paragraaf 4.3 staat online.
+# Hoofdstukken 1 tot en met 7 staan online.
 
 # Alle hoofdstukken standaard uitsluiten
 /[0-9][0-9]-*/
@@ -19,26 +19,17 @@
 # Hoofdstuk 03 - VOLTOOID
 !/03-Functies typeren/
 
-# Hoofdstuk 04 - BEZIG: tot en met 4.3
+# Hoofdstuk 04 - VOLTOOID
 !/04-Objecten, interfaces en structural typing/
-/04-Objecten, interfaces en structural typing/*
-!/04-Objecten, interfaces en structural typing/README.md
-!/04-Objecten, interfaces en structural typing/img/
-!/04-Objecten, interfaces en structural typing/4.1-Een objecttype/
-!/04-Objecten, interfaces en structural typing/4.2-interface en type/
-!/04-Objecten, interfaces en structural typing/4.3-Optionele en readonly-velden/
 
-# Volgende paragrafen van hoofdstuk 04 (voeg toe zodra ze behandeld zijn):
-#   !/04-Objecten, interfaces en structural typing/4.4-De vorm van een product/
-#   !/04-Objecten, interfaces en structural typing/4.5-Uitbreiden met extends en &/
-#   !/04-Objecten, interfaces en structural typing/4.6-Een gemeenschappelijke basis en index signatures/
-#   !/04-Objecten, interfaces en structural typing/4.7-Structural typing/
-#   !/04-Objecten, interfaces en structural typing/4.8-De eerste catalogus/
-#   !/04-Objecten, interfaces en structural typing/4.9-Klassikale oefening 4.1 - Klanten en adressen/
-#   !/04-Objecten, interfaces en structural typing/4.10-Klassikale oefening 4.2 - Eén etiket voor alles met een naam en een prijs/
-#   !/04-Objecten, interfaces en structural typing/4.11-Veelgemaakte fouten/
-#   !/04-Objecten, interfaces en structural typing/4.12-Voor wie klaar is/
-#   !/04-Objecten, interfaces en structural typing/4.13-Wat je nu kunt/
+# Hoofdstuk 05 - VOLTOOID
+!/05-Arrays, tuples en arraymethodes/
+
+# Hoofdstuk 06 - VOLTOOID
+!/06-Unions en narrowing/
+
+# Hoofdstuk 07 - VOLTOOID
+!/07-Type guards, unknown, as en satisfies/
 
 # ==========================================
 # ALGEMENE UITSLUITINGEN
