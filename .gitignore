@@ -1,7 +1,7 @@
 # ==========================================
 # TYPESCRIPT LESSEN - VOORTGANG
 # ==========================================
-# Hoofdstukken 1 tot en met 7 staan online.
+# Hoofdstukken 1 tot en met 8 staan online.
 
 # Alle hoofdstukken standaard uitsluiten
 /[0-9][0-9]-*/
@@ -30,6 +30,9 @@
 
 # Hoofdstuk 07 - VOLTOOID
 !/07-Type guards, unknown, as en satisfies/
+
+# Hoofdstuk 08 - VOLTOOID
+!/08-Klassen/
 
 # ==========================================
 # ALGEMENE UITSLUITINGEN
